@@ -27,6 +27,16 @@ namespace Strategy
         {
             Console.WriteLine("All ducks float, even decoys!");
         }
+
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            quackBehavior = qb;
+        }
     }
 
 }
